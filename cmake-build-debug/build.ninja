@@ -55,8 +55,8 @@ build CMakeFiles/ASP2_DZ3.dir/main.cpp.obj: CXX_COMPILER__ASP2_DZ3_unscanned_Deb
   OBJECT_DIR = CMakeFiles\ASP2_DZ3.dir
   OBJECT_FILE_DIR = CMakeFiles\ASP2_DZ3.dir
 
-build CMakeFiles/ASP2_DZ3.dir/Heap.cpp.obj: CXX_COMPILER__ASP2_DZ3_unscanned_Debug C$:/Users/gogac/CLionProjects/ASP2_DZ3/Heap.cpp || cmake_object_order_depends_target_ASP2_DZ3
-  DEP_FILE = CMakeFiles\ASP2_DZ3.dir\Heap.cpp.obj.d
+build CMakeFiles/ASP2_DZ3.dir/BinomialHeap.cpp.obj: CXX_COMPILER__ASP2_DZ3_unscanned_Debug C$:/Users/gogac/CLionProjects/ASP2_DZ3/BinomialHeap.cpp || cmake_object_order_depends_target_ASP2_DZ3
+  DEP_FILE = CMakeFiles\ASP2_DZ3.dir\BinomialHeap.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASP2_DZ3.dir
   OBJECT_FILE_DIR = CMakeFiles\ASP2_DZ3.dir
@@ -69,7 +69,7 @@ build CMakeFiles/ASP2_DZ3.dir/Heap.cpp.obj: CXX_COMPILER__ASP2_DZ3_unscanned_Deb
 #############################################
 # Link the executable ASP2_DZ3.exe
 
-build ASP2_DZ3.exe: CXX_EXECUTABLE_LINKER__ASP2_DZ3_Debug CMakeFiles/ASP2_DZ3.dir/main.cpp.obj CMakeFiles/ASP2_DZ3.dir/Heap.cpp.obj
+build ASP2_DZ3.exe: CXX_EXECUTABLE_LINKER__ASP2_DZ3_Debug CMakeFiles/ASP2_DZ3.dir/main.cpp.obj CMakeFiles/ASP2_DZ3.dir/BinomialHeap.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ASP2_DZ3.dir
