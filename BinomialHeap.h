@@ -19,17 +19,22 @@ struct BinomialNode {
 class BinomialHeap {
 private:
     BinomialNode* head;
+    bool isMaxHeap;  // Ovaj flag označava da li je heap Max-Heap ili Min-Heap
 
     BinomialNode* mergeTrees(BinomialNode* b1, BinomialNode* b2);
     void consolidate();
-
+    void printTree(BinomialNode* node);
+    void clearTree(BinomialNode* node);;
 public:
-    BinomialHeap() : head(nullptr) {}
+    BinomialHeap(bool maxHeap = false) : head(nullptr), isMaxHeap(maxHeap) {}
+    ~BinomialHeap() {
+        clearTree(head);
+    };
 
+    void removeTop();
     void insert(int key);
     void merge(BinomialHeap& other);
     void printHeap();
-    void printTree(BinomialNode* root);
 };
 
 #endif
