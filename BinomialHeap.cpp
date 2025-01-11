@@ -42,7 +42,6 @@ void BinomialHeap::removeTop() {
 
 BinomialNode* BinomialHeap::mergeTrees(BinomialNode* b1, BinomialNode* b2) {
     if ((isMaxHeap && b1->key < b2->key) || (!isMaxHeap && b1->key > b2->key)) {
-        // Ako je Max-Heap, b1 mora biti veći, tako da swap b1 i b2
         swap(b1, b2);
     }
 
